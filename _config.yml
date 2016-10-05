@@ -1,0 +1,12 @@
+# Site settings
+title: CNR-ISMAR
+# email: 
+description: > # this means to ignore newlines until "baseurl:"
+  CNR-ISMAR
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://menegon.github.io" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+# github_username:  menegon
+
+# Build settings
+markdown: kramdown
