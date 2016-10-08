@@ -19,6 +19,8 @@ date:   2016-10-12
 
 </style>
 
+<!-- ************************************************** -->
+
 <section data-background="background.jpg">
   <h3>CNR-ISMAR in situ observations network: new approaches for an interactive, high performance, interoperable system</h3>
   <p>Stefano Menegon, Pierluigi Penna, Mauro Bastianini, Giuseppe Stanghellini, Francesco Riminucci, Tiziano Minuzzo, <b>Alessandro Sarretta</b></p>
@@ -27,21 +29,27 @@ date:   2016-10-12
   <p>IMDIS 2016 - Gdansk, October 12, 2016</p>
 </section>
 
+<!-- ************************************************** -->
+
 <section>
   <h3>Index</h3>
   <ul>
-    <li>Obiettivi/Motivazioni</li>
-    <li>Contesto: frammentazione delle sedi, RITMARE, SDI, SOS, Data Policy</li>
-    <li>Architettura</li>
-    <li>Scelte implementative: influxdb, grafana anche come strumento di controllo rapido dei dati, app, script per esportare e sincronizzare il SOS, kapacitor</li>
-    <li>Vantaggi</li>
+    <li>Context: fragmentation, RITMARE, SDI, SOS, Data Policy</li>
+    <li>Objectives</li>
+    <li>Architecture</li>
+    <li>Implementation: InfluxDB, Grafana (also as quick quality check for data), app, script to export and synchronize SOS, kapacitor</li>
+    <li>Advantages</li>
   </ul>
 </section>
+
+<!-- ************************************************** -->
 
 <section>
   <h3>ISMAR</h3>
   Short introduction of the Institute of Marine Sciences?
 </section>
+
+<!-- ************************************************** -->
 
 <section>
   <h3>CNR-ISMAR in situ observations network</h3>
@@ -49,21 +57,30 @@ date:   2016-10-12
   <p><u>TODO: add map with location of the buoys</u></p>
 </section>
 
+<!-- ************************************************** -->
+
 <section>
   <h3>CNR-ISMAR in situ observations network</h3>
   Northern Adriatic Network
   <ul>
-    <li>Paloma mast (Gulf of Trieste)
+    <li>Paloma mast (Gulf of Trieste)???
     <li>Acqua Alta oceanographic tower (Gulf of Venice)
     <li>S1 mast and E1 buoy (Emilia Romagna coast)
     <li>Telesenigaglia mast (Marche coast)
   </ul>
-  <p><u>TODO: add images of the buoys</u></p>
+  <p>
+    <img alt="Acqua Alta oceanographic tower" style="border-width:0" src="piattaforma.jpg" height=200/>
+    <img alt="S1 mast" style="border-width:0" src="s1.jpg" height=200/>
+    <img alt="E1 buoy" style="border-width:0" src="e1.jpg" height=200/>
+    <img alt="Telesenigaglia mast" style="border-width:0" src="telesinigaglia.jpg" height=200/>
+  </p>
 </section>
+
+<!-- ************************************************** -->
 
 <section>
   <h3>Past situation</h3>
-  Unharmonized network
+  <p>Unharmonized network</p>
   <ul>
     <li>different managing system
     <li>separated databases
@@ -72,6 +89,8 @@ date:   2016-10-12
     <li>non-common (or non existent) data policies
   </ul>
 </section>
+
+<!-- ************************************************** -->
 
 <section>
   <h3>RITMARE project</h3>
@@ -91,6 +110,8 @@ date:   2016-10-12
   </ul>
 </section>
 
+<!-- ************************************************** -->
+
 <section>
   <h3>Objectives</h3>
   <ul>
@@ -101,13 +122,86 @@ date:   2016-10-12
   </ul>
 </section>
 
+<!-- ************************************************** -->
 
 <section>
-  <h3>List</h3>
+  <h3>Architecture</h3>
   <ul>
-    <li>
+    <li>DB raw
+    <li>Quality control
+    <li>DB Qc
+    <li>Publication DB
+    <li>Standard output services
+      <ul>
+        <li>OGC SOS
+        <li>NetCDF
+      </ul>
+  </ul>
+  <p><u>TODO: add architecture schema</u></p>
+</section>
+
+<!-- ************************************************** -->
+
+<section>
+  <h3>Implementation</h3>
+  <ul>
+    <li>InfluxDB: open source time-series data storage<br/>
+  </ul>
+  <a href="https://www.influxdata.com/time-series-platform/influxdb/">
+    <img alt="InfluxDB" style="border-width:0" src="influxdb.png" width=600/>
+  </a>
+  <ul>
+    <li>Grafana: open source dashboards for querying and visualizing time series and metrics <br/>
+  </ul>
+  <a href="http://grafana.org/">
+    <img alt="InfluxDB" style="border-width:0" src="grafana.png" width=600/>
+  </a>
+</section>
+
+<!-- ************************************************** -->
+
+<section>
+  <h3>Parameters and variables acquired</h3>
+  <ul>
+    <li>...
   </ul>
 </section>
+
+<!-- ************************************************** -->
+
+<section>
+  <h3>Open science approach</h3>
+  <ul>
+    <li>Open access to data
+    <li>Standard open licences for access and reuse:<br/>
+      <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 (CC-BY) <img alt="License Creative Commons" style="border-width:0; vertical-align:middle;" src="by.png" width=150/></a>
+    <li>Publication of yearly datasets on <a href="https://zenodo.org/">Zenodo</a> with DOI
+    <li>Publication of a Data Paper with relevant aggregation of data
+  </ul>
+</section>
+
+
+<!-- ************************************************** -->
+
+
+<section>
+  <h3>A quick hands-on</h3>
+  <h5><a href="http://rmm.dati.ismar.cnr.it">http://rmm.dati.ismar.cnr.it</a></h5>
+  <img alt="home" style="border-width:0" src="home.png" width=80%>
+</section>
+
+<!-- ************************************************** -->
+
+<section>
+  <h3>Conclusions</h3>
+  <ul>
+    <li>From a series of unconnected systems to a real network of interconnected data flows
+    <li>Use of open source technologies and international standards
+    <li>Vision towards open data access and sharing
+  </ul>
+</section>
+
+<!-- ************************************************** -->
 
 <section>
     <h3>CNR-ISMAR in situ observations network: new approaches for an interactive, high performance, interoperable system</h3>
@@ -130,6 +224,8 @@ date:   2016-10-12
     </blockquote>
     </small>
     </section>
+
+<!-- ************************************************** -->
 
 <section>
   <h3>TO DO</h3>
