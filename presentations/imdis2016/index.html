@@ -16,20 +16,19 @@ date:   2016-10-12
  .green {
      color: #17ff2e;
  }
-
 </style>
 
 <!-- ************************************************** -->
 
 <section data-background="background.jpg">
   <h3>CNR-ISMAR in situ observations network: new approaches for an interactive, high performance, interoperable system</h3>
-  <p>Stefano Menegon, Pierluigi Penna, Mauro Bastianini, Giuseppe Stanghellini, Francesco Riminucci, Tiziano Minuzzo, <b>Alessandro Sarretta</b></p>
-  <p><small>alessandro.sarretta at ismar.cnr.it</small></p>
-  <h5>CNR - Institute of Marine Sciences</h5>
+  <p style="font-size:30px">Stefano Menegon, Pierluigi Penna, Mauro Bastianini, Giuseppe Stanghellini, Francesco Riminucci, Tiziano Minuzzo, <b>Alessandro Sarretta</b></p>
+  <p><small>alessandro.sarretta [at] ismar.cnr.it</small></p>
+  <h5><img src="logoISMAR.jpg" height=100 style="border-width:0; vertical-align:middle"/>     CNR - Institute of Marine Sciences     <img src="logo_ritmare.png" heigth=100 style="border-width:0; vertical-align:middle"/></h5>
   <p>IMDIS 2016 - Gdansk, October 12, 2016</p>
 </section>
 
-<!-- ************************************************** -->
+<!-- **************************************************
 
 <section>
   <p style="font-size:70px"><a href="http://tinyurl.com/ismar-imdis">tinyurl.com/ismar-imdis</a></p>
@@ -39,23 +38,11 @@ date:   2016-10-12
   <p style="font-size:70px" class="fragment">Twitter: <a href="https://twitter.com/alesarrett">@alesarrett</a></p>
 </section>
 
-<!-- ************************************************** -->
+ ************************************************** -->
 
 <section>
-  <h3>Index</h3>
-  <ul>
-    <li>Context: fragmentation, RITMARE, SDI, SOS, Data Policy</li>
-    <li>Objectives</li>
-    <li>Architecture</li>
-    <li>Implementation: InfluxDB, Grafana (also as quick quality check for data), app, script to export and synchronize SOS, kapacitor</li>
-    <li>Advantages</li>
-  </ul>
-</section>
-
-<!-- ************************************************** -->
-
-<section>
-  <h3>ISMAR<img alt="Logo ISMAR" style="float:right; border-width:0; vertical-align:top;" src="logoISMAR.jpg" height=100/></h3>
+  <h3>ISMAR - Institute of Marine Sciences</h3>
+  <p><a href="http://www.ismar.cnr.it/">www.ismar.cnr.it </a><img alt="Logo ISMAR" style="border-width:0; vertical-align:middle;" src="logoISMAR.jpg" height=80/></p>
   <div style="float: left; width: 40%;">
     <td><img alt="Sedi ISMAR" style="border-width:0; vertical-align:middle" src="sediISMAR.png"/>
   </div>
@@ -69,13 +56,10 @@ date:   2016-10-12
         <li>natural and anthropogenic factors producing economic and social impacts on coastal systems from pre-history to the industrial epoc
       </ul>
     </small></p>
-
   </div>
 </section>
 
 <!-- ************************************************** -->
-
-<section>
 
 <section>
   <h3>RITMARE project</h3>
@@ -98,18 +82,17 @@ date:   2016-10-12
 <!-- ************************************************** -->
 
 <section>
-  <h4>ISMAR RITMARE in-situ observations network</h4>
-  <img alt="RITMARE Network" style="border-width:0" src="networkRITMARE.png" width=100%/>
+  <h4>RITMARE in-situ observations network</h4>
+  <img alt="RITMARE Network" style="border-width:0" src="networkRITMARE.jpg" width=85%/>
 </section>
 
 <!-- ************************************************** -->
 
 <section>
   <h4>ISMAR Adriatic in situ observations network</h4>
-  <img alt="Adriatic Network" style="border-width:0" src="networkAdriatic.png" width=80%/>
+  <img alt="Adriatic Network" style="border-width:0" src="networkAdriatic.png" width=65%/>
 </section>
 
-</section>
 <!-- ************************************************** -->
 
 <section>
@@ -131,7 +114,7 @@ date:   2016-10-12
   </ul>
   <p>
     <img alt="Acqua Alta oceanographic tower" style="border-width:0" src="piattaforma.jpg" height=200/>
-    <img alt="S1 mast" style="border-width:0" src="s1.jpg" height=200/>
+    <img alt="S1-GB mast" style="border-width:0" src="S1-GB.jpg" height=200/>
     <img alt="E1 buoy" style="border-width:0" src="e1.jpg" height=200/>
     <img alt="Telesenigaglia mast" style="border-width:0" src="telesinigaglia.jpg" height=200/>
   </p>
@@ -143,9 +126,9 @@ date:   2016-10-12
   <h3>Background: Unharmonized network</h3>
   <ul>
     <li>various levels of (or no) funding
-    <li>different managing system
+    <li>different managing systems
     <li>separated databases
-    <li>different validation procedure
+    <li>different validation procedures
     <li>non-standard publishing of data
     <li>non-common (or non existent) data policies
   </ul>
@@ -177,16 +160,16 @@ date:   2016-10-12
 <section>
   <h3>Implementation</h3>
   <ul>
-    <li>InfluxDB: open source time-series data storage<br/>
+    <li><strong>InfluxDB</strong>: open source time-series data storage<br/>
   </ul>
   <a href="https://www.influxdata.com/time-series-platform/influxdb/">
-    <img alt="InfluxDB" style="border-width:0" src="influxdb.png" width=600/>
+    <img alt="InfluxDB" src="influxdb.png" width=600/>
   </a>
   <ul>
-    <li>Grafana: open source dashboards for querying and visualizing time series and metrics <br/>
+    <li><strong>Grafana</strong>: open source dashboards for querying and visualizing time series and metrics <br/>
   </ul>
   <a href="http://grafana.org/">
-    <img alt="InfluxDB" style="border-width:0" src="grafana.png" width=600/>
+    <img alt="InfluxDB" src="grafana.png" width=600/>
   </a>
 </section>
 
@@ -195,7 +178,7 @@ date:   2016-10-12
 <section>
   <h3>Parameters and variables acquired</h3>
   <p>Use of <a href="http://vocab.nerc.ac.uk/collection/P03/current/">SeaDataNet vocabularies</a> for the <a href="http://rmm.dati.ismar.cnr.it/dashboard/file/ismarsos-observed-properties.json">Observed properties</a></p>
-  <img alt="Observed properties" style="border-width:0" src="observedProperties.png" width=600/>
+  <img alt="Observed properties" src="observedProperties.png" width=600/>
 </section>
 
 <!-- ************************************************** -->
@@ -214,11 +197,30 @@ date:   2016-10-12
 
 <!-- ************************************************** -->
 
-
 <section>
   <h3>A quick hands-on</h3>
   <h5><a href="http://rmm.dati.ismar.cnr.it">http://rmm.dati.ismar.cnr.it</a></h5>
   <img alt="home" style="border-width:0" src="home.png" width=80%>
+</section>
+
+<section data-background="1_homeDashboard.png">
+  <h3>.</h3>
+</section>
+
+<section data-background="2_listStations.png">
+  <h3>.</h3>
+</section>
+
+<section data-background="3_overview.png">
+  <h3>.</h3>
+</section>
+
+<section data-background="4_view.png">
+  <h3>.</h3>
+</section>
+
+<section data-background="5_aggregate.png">
+  <h3>.</h3>
 </section>
 
 <!-- ************************************************** -->
@@ -267,14 +269,3 @@ date:   2016-10-12
     </section>
 
 <!-- ************************************************** -->
-    <section>
-        <section>
-            <h4>Test nested</h4>
-        </section>
-        <section>
-            <h4>Test nested 1</h4>
-        </section>
-        <section>
-            <h4>Test nested 2</h4>
-        </section>
-    </section>
